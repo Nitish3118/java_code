@@ -9,9 +9,6 @@ public class RegularStudent extends Student{
 		this.attend_per = attend_per;
 		this.class_room=class_room;
 	}
-	public RegularStudent() {
-		
-	}
 	public void submitAssignment() {
 		System.out.println("The student have submitted the assignment in hard copy");
 	}
@@ -22,5 +19,8 @@ public class RegularStudent extends Student{
 	public void displayInfo() {
 		super.displayInfo();
 		System.out.println("the class room is "+class_room);
+	}
+	public void search(int RollNumber) {
+		super.search(RollNumber);
 	}
 }

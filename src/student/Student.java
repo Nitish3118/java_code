@@ -1,9 +1,9 @@
 package student;
 
 public class Student {
-	public int RollNumber;
-	String Name;
-	String Department;
+	private int RollNumber;
+	private String Name;
+	private String Department;
 	char section;
 	static String collegename="KIET"; //college name
 	
@@ -44,6 +44,9 @@ public class Student {
 	}
 	public void platform() {
 		System.out.println("The student"+Name+"has joined the online platform");
+	}
+	public void search(int RollNumber) {
+		System.out.println("Search the student of RollNumber"+ RollNumber);
 	}
 	
 	public static void main(String args[]) {
